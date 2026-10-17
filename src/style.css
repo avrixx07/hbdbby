@@ -45,3 +45,44 @@
 }
 @keyframes swipeArrow{50%{transform:translateX(4px)}}
 @keyframes swipeDemo{0%,100%{translate:0 0}35%{translate:-18px 0}60%{translate:8px 0}}
+
+/* Readable mobile scale */
+@media(max-width:650px){
+  :root{font-size:17px}
+  .scene{justify-content:center;padding:72px 18px 38px;min-height:100dvh;height:auto;overflow-x:hidden;overflow-y:visible}
+  .scene h1{font-size:clamp(2.35rem,11vw,3.25rem);line-height:1.02;margin-bottom:22px}
+  .scene h2{font-size:clamp(2.15rem,10vw,2.9rem);line-height:1.04;margin-bottom:18px}
+  .kicker,.eyebrow{font-size:1.08rem;line-height:1.25;letter-spacing:.1em}
+  .scene p{font-size:1rem;line-height:1.6}
+  .btn{min-height:56px;max-width:94vw;padding:15px 24px;font-size:1rem;line-height:1.2;margin:14px 8px;box-shadow:4px 5px 0 #694a50}
+  .sound{width:48px;height:48px;top:15px;right:14px}
+  .sound svg{width:24px;height:24px}
+  .animal{width:120px}
+
+  .intro-art{margin-bottom:24px}.intro-art .bear{width:125px}.intro-art .bunny{width:118px}.gift{width:86px;height:80px}
+  .copy{max-width:360px}.copy p:not(.eyebrow){font-size:1.03rem;line-height:1.55;margin-bottom:12px}
+
+  .birthday{padding-top:76px}.birthday-memory{width:150px;margin:4px auto 16px}.birthday-memory figcaption{font-size:1.08rem}
+  .birthday .party .animal{width:108px}.birthday .party .cake{width:125px;height:190px}.bodycopy{max-width:370px}.bodycopy p{font-size:1rem;line-height:1.55}
+
+  .gallery{padding:76px 16px 38px}.gallery .kicker{font-size:1.05rem}.gallery h2{font-size:clamp(2.15rem,10vw,2.75rem)}
+  .gallery>p:not(.kicker){font-size:.98rem}.polaroids{grid-template-columns:repeat(5,min(81vw,340px));padding-left:9.5vw;padding-right:9.5vw;scroll-padding-inline:9.5vw}
+  .polaroid{height:390px}.cardface.front img{height:310px}.cardface.front b{font-size:1.18rem}.cardface.back p{font-size:1.35rem}
+
+  .game{padding:68px 14px 30px}.game h2{font-size:2.55rem}.game .kicker{font-size:1.02rem}.game-tip{font-size:1.05rem}.love-count b{font-size:1.55rem}.love-count span{font-size:.9rem}
+  .gamefield{height:55dvh;min-height:360px}.catcher .animal{width:118px}.win h3{font-size:2rem}.win p{font-size:1rem}
+
+  .wish{padding-top:76px}.wishart .animal{width:125px}.wishart .cake{width:145px}.steps{gap:10px;max-width:390px}.steps span{font-size:.96rem;line-height:1.35;padding:10px 14px}.afterwish{max-width:380px}
+
+  .letter{padding:76px 14px 40px}.letter h2{font-size:2.35rem}.envelope{width:min(390px,92vw);height:225px;margin:28px 0}.paper{width:94vw;padding:28px 22px}.lettertext{font-size:1.02rem;line-height:1.75}.lettertext p:first-child{font-size:1.65rem}.typing-letter{min-height:330px}
+
+  .ending{padding:82px 18px 42px}.ending .endcopy{max-width:390px}.ending .endcopy>p:not(.kicker){font-size:1rem;line-height:1.5;margin:11px 0}.ending h1{font-size:2.35rem;margin:26px 0}.ending .couple .animal{width:132px}.ending h3{font-size:1.45rem}.moon{font-size:88px}
+}
+@media(max-width:360px){
+  :root{font-size:16px}.scene{padding-left:14px;padding-right:14px}.scene h1{font-size:2.25rem}.scene h2{font-size:2.05rem}
+  .polaroids{grid-template-columns:repeat(5,84vw);padding-left:8vw;padding-right:8vw}.polaroid{height:355px}.cardface.front img{height:280px}
+  .birthday .party .animal{width:94px}.birthday .party .cake{width:110px}.gamefield{min-height:335px}
+}
+@media(min-width:651px) and (max-width:900px){
+  :root{font-size:17px}.scene{padding-left:28px;padding-right:28px}.btn{min-height:54px;font-size:1rem}.bodycopy,.afterwish{font-size:1.05rem}
+}
